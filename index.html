@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seedfaa Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="imsge/Seedfaa_logo.png">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header id="header">
+        <h1>Modern App Store from Seedfaa</h1>
+        <p>The Future of App Discovery</p>
+    </header>
+
+    <!-- Search Bar -->
+    <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Search for apps..." onkeyup="searchApps()">
+        <div class="suggestions" id="suggestionsContainer"></div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Find Your Next Favorite App</h1>
+        <p>Curated apps tailored to your needs</p>
+    </section>
+
+    <!-- Featured Apps Section -->
+    <section class="featured">
+        <h2>Featured Apps</h2>
+        <div class="apps" id="appContainer">
+            <div class="apps" id="appContainer">
+                <div class="app" data-name="Study Video" onclick="location.href='download_task_master.html'">
+                    <img src="imsge/Seedfaa_logo.png" alt="Task Master">
+                    <h3>Study Videos</h3>
+                    <p>Category: Study</p>
+                </div>
+                <div class="app" data-name="MovieZone" onclick="location.href='download_movie_zone.html'">
+                    <img src="https://via.placeholder.com/100" alt="MovieZone">
+                    <h3>MovieZone</h3>
+                    <p>Category: Entertainment</p>
+                </div>
+                <div class="app" data-name="ChatX" onclick="location.href='download_chatx.html'">
+                    <img src="https://via.placeholder.com/100" alt="ChatX">
+                    <h3>ChatX</h3>
+                    <p>Category: Social</p>
+                </div>
+                <div class="app" data-name="FitLife" onclick="location.href='download_fitlife.html'">
+                    <img src="https://via.placeholder.com/100" alt="FitLife">
+                    <h3>FitLife</h3>
+                    <p>Category: Health & Fitness</p>
+                </div>
+                <div class="app" data-name="PhotoEditor Pro" onclick="location.href='download_photo_editor.html'">
+                    <img src="https://via.placeholder.com/100" alt="PhotoEditor Pro">
+                    <h3>PhotoEditor Pro</h3>
+                    <p>Category: Photography</p>
+                </div>
+                <div class="app" data-name="Finance Tracker" onclick="location.href='download_finance_tracker.html'">
+                    <img src="https://via.placeholder.com/100" alt="Finance Tracker">
+                    <h3>Finance Tracker</h3>
+                    <p>Category: Finance</p>
+                </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Modern App Store. All Rights Reserved.</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

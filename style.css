@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f0f5;
+    color: #333;
+    overflow-x: hidden;
+}
+/* CSS for smooth transitions */
+body {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out; /* Smooth fade effect */
+}
+
+body.fade-out {
+    opacity: 0;
+}
+
+
+header {
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    padding: 20px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+.search-bar {
+    margin: 30px auto;
+    max-width: 600px;
+    text-align: center;
+    position: relative;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.2rem;
+    border-radius: 30px;
+    border: 2px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: border 0.3s ease;
+}
+
+.search-bar input:focus {
+    border: 2px solid #6a11cb;
+    outline: none;
+}
+
+.suggestions {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    max-height: 300px;
+    overflow-y: auto;
+    display: none;
+}
+
+.suggestion {
+    padding: 15px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.suggestion:hover {
+    background: #f0f0f0;
+}
+
+.highlight {
+    font-weight: bold;
+    color: #6a11cb;
+}
+
+.hero {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(15px);
+    padding: 100px 20px;
+    text-align: center;
+    margin-top: 30px;
+    border-radius: 20px;
+    max-width: 1100px;
+    margin: 30px auto;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.hero h1 {
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 15px;
+    animation: slideDown 1s ease-in-out;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    color: #555;
+}
+
+.featured {
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.featured h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.apps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.app {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.4s ease;
+    text-align: center;
+}
+
+.app:hover {
+    transform: translateY(-15px);
+}
+
+.app img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.app h3 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.app p {
+    color: #666;
+}
+
+footer {
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+    }
+
+    .app {
+        padding: 20px;
+    }
+}
